@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-card ">
+       <div class="searchbox">
+    <input id="cityname" list="cityList" placeholder="Enter or select a city" />
+    <datalist id="cityList"></datalist>
+    <button id="searchbtn">Search</button>
+</div>
+
+        <div class="weather-header">
+            <h2 class="location">New York City</h2>
+        </div>
+
+        <div class="weather-info">
+            <h1 class="temperature">25°C</h1>
+            <img class="images" src="assets/photo.pmg" alt="">
+            <p class="condition">Sunny</p>
+            <div class="wind">
+                <img class="images" src="assets/windspeed.png" alt="">
+                <p class="windspeed">10 kmph</p>
+            </div>
+        </div>
+
+        <button class="refresh-btn">Refresh</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
